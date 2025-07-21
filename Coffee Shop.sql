@@ -168,6 +168,7 @@ SELECT
         
         
     FROM coffee.shop.coffeeshopsales
+    WHERE transaction_date BETWEEN '2023-01-30' AND '2023-06-30'
     GROUP BY time_bucket, 
         store_location, 
         unit_price, 
